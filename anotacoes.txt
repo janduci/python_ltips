@@ -1,0 +1,23 @@
+Instalar o módulo ipython 
+PEP8 é o guia de estilos do Python, por exemplo, apertar 4 vezes a barra de espaços (identação). Outro exemplo, utilizar apenas 4 níveis de recuo, ou seja, 16 vezes a barra. 
+
+: no final significa que um novo bloco será iniciado com nocas instruções
+
+Python é snake case = definição de variáveis letras minúsculas separadas por undeline
+
+O interpretador Python entende intruções que estão divididas em 3 categorias:
+
+1) Expressão/Expression = instrução que espera um valor de retorno. Por exemplo 1 + 1 -> 2
+2) Declaração/Statement = instrução que prepara o interpretador para uma determinada tarefa mas não retorna valor, por exemplo, if - else
+3) Atribuição/Assignment = instrução que pega o retorno de uma expressão e processa o seu valor com intuito de armazenar, por exemplo, soma = 40 + 2
+
+Comando para verificar o ambiente do seu Python
+"python3 -m site" 
+m = módulo
+site = lista o ambiente do seu Python
+
+Formatação de texto em Python:
+concatenação -> %s
+str.format -> {}
+f-strings -> f"{}"
+Site ótimo para formatação: https://pyformat.info/

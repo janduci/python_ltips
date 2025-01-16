@@ -5,7 +5,7 @@ __license__ = "Unlicense"
 
 # modúlo "os" para interagir com Sistema Operacional
 # para obter ajuda sobre o módulo, basta entrat no shell linux e digitar python3, importar o modulo os e após isso digitar help(os)
-import os 
+import os
 
 # os.environ -> um dicionário Python contendo as variavéis e seus valoresq
 # os.getenv("LANG") -> função usada para buscar o valor de uma variável especifica.
@@ -20,6 +20,7 @@ elif current_language == "it_IT":
 elif current_language == "es_ES":
     message = "Hola, Mundo!"
 
-print(message)  
-                                                                                            
+print(message)
+
 # uma forma de forçar uma variável é declará-la na frente do Python. Exemplo: LANG=it_IT python3 var_ambiente.py
+# teste

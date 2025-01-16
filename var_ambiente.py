@@ -23,4 +23,4 @@ elif current_language == "es_ES":
 print(message)
 
 # uma forma de forçar uma variável é declará-la na frente do Python. Exemplo: LANG=it_IT python3 var_ambiente.py
-# teste
+

@@ -1,3 +1,6 @@
+https://pythontutor.com/
+Visualizacao gráfica do código em execução
+
 Instalar o módulo ipython 
 PEP8 é o guia de estilos do Python, por exemplo, apertar 4 vezes a barra de espaços (identação). Outro exemplo, utilizar apenas 4 níveis de recuo, ou seja, 16 vezes a barra. 
 
@@ -21,3 +24,71 @@ concatenação -> %s
 str.format -> {}
 f-strings -> f"{}"
 Site ótimo para formatação: https://pyformat.info/
+
+Um tipo de dado em Python é tudo que tenha um ID de memória
+
+########## Parenteses utilizados em métodos:
+
+O método isdigit() vem da classe str (string) no Python. Toda string em Python é um objeto da classe str, e essa classe fornece vários métodos que você pode usar para manipular ou analisar o conteúdo da string.
+
+Quando você escreve algumacoisa.isdigit(), você está chamando um método embutido da classe str que verifica se o caractere (ou a string inteira) é composto apenas por dígitos numéricos. Os parênteses () em métodos como .isdigit() indicam que estamos chamando o método. Eles são usados para executar a lógica ou o comportamento definido dentro do método. Se você omitir os parênteses, estará apenas acessando o método como um objeto, mas não o executará.
+
+Método vs. Função:
+Função: É uma função definida fora de uma classe e pode ser chamada independentemente de qualquer objeto.
+Método: É uma função que faz parte de uma classe e deve ser chamada em um objeto ou classe.
+
+A diferença entre atributo e método em Python está relacionada à função e ao propósito de cada um dentro de uma classe. Ambos são componentes de uma classe e podem ser usados em objetos, mas têm finalidades distintas.
+
+Métodos tem ()
+Enquanto que atributo não tem
+Ambos são precedidos de ponto
+
+Paradigma da programação
+Programação funcional x programação imperativo
+
+Funções úteis da biblioteca built-in
+https://docs.python.org/pt-br/3.10/library/functions.html
+
+########## FUNÇÕES
+
+Verificar as funções builtins (não precisa importar) do Python
+dir(__builtins__)
+
+Listando módulos do Python
+help("modules")
+
+Padrão de nomenclatura no Python:
+Nomeado tudo em maiusculo = constante
+Primeira letra maiuscula e as demais minusculas = classe
+Com parentêses no final = função
+Nome minusculo sem o parentêses = variável
+
+Exemplos: 
+
+In [13]: import random
+In [14]: random.
+  betavariate()     choices()         getrandbits()     main()            randbytes()       randrange()       setstate()         
+  binomialvariate() expovariate()     getstate()        normalvariate()   randint()         RECIP_BPF         SG_MAGICCONST      
+  BPF               gammavariate()    LOG4              NV_MAGICCONST     Random            sample()          shuffle()         >
+  choice()          gauss()           lognormvariate()  paretovariate()   random()          seed()            SystemRandom   
+
+Toda função sempre retorna um valor, mesmo que none (acontece o none quando vc esquece de colocar o return)
+Mas tem casos que o retur não é necessário, por exemplo:
+def exibir_mensagem():
+    print("Olá, mundo!")
+
+exibir_mensagem()  # Saída: Olá, mundo!
+
+Acima, a função só executa o código interno (exibe a mensagem) e não retorna nada
+Se você acrescentar:
+
+resultado = exibir_mensagem()
+print(resultado)  # Saída: None
+
+E assim nesse caso será retornado o none, pois não há o "return"
+Uma função que não retorna nada de útil é conhecida como procedure
+
+
+
+
+Toda função deve resolver apenas um problema

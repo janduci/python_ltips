@@ -88,7 +88,71 @@ print(resultado)  # Saída: None
 E assim nesse caso será retornado o none, pois não há o "return"
 Uma função que não retorna nada de útil é conhecida como procedure
 
-
-
-
 Toda função deve resolver apenas um problema
+
+As funções são formadas por alguns elementos:
+
+definição (ou atribuição) - def nome_da_funcao
+assinatura - Tudo o que estiver entre parenteses - (a, b ,c) e antes de :
+código interno
+valor de retorno - Tudo o que tiver depois de return
+
+Argumentos:
+Ao passar os argumentos para as funções podemos passa-los posicionalmente ou nomeadamente.
+
+Argumentos posicionais:
+nome_da_funcao(1, 2, 3)
+Argumentos nominais:
+nome_da_funcao(a=1, b=2, c=3)
+
+Os parâmetros de uma função são as variáveis que recebem valores dentro de uma função. Eles são declarados na assinatura da função, entre parênteses. 
+def funcao(a, b, c)
+
+A função filter() em Python é usada para filtrar elementos de uma sequência (como listas, tuplas ou conjuntos) com base em uma condição definida por uma função. Exemplo:
+
+a)
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Saída: [2, 4, 6, 8, 10]
+
+b)
+palavras = ["Python", "Java", "C", "JavaScript", "Go"]
+
+longas = list(filter(lambda p: len(p) > 5, palavras))
+print(longas)  # Saída: ['Python', 'JavaScript']
+
+Quando usar filter()?
+Quando precisar filtrar elementos de uma coleção sem criar um laço for manualmente.
+Para tornar o código mais funcional e legível.
+Quando quiser evitar criar listas temporárias com for e if.
+
+
+Função de primeira classe é uma função que pode ser tratada como qualquer outro valor, ou seja, pode ser:
+Atribuída a uma variável
+Passada como argumento para outra função
+Retornada por outra função
+Armazenada em estrutura de dados, como lista e dicionários
+
+Em Python, funções anônimas são funções sem um nome explícito, definidas usando a palavra-chave lambda. Elas são conhecidas como funções lambda e geralmente são usadas para operações curtas e simples, onde não há necessidade de definir uma função completa com def. Exemplo:
+
+a)
+lambda argumentos: expressão
+
+b)
+soma = lambda x, y: x + y
+print(soma(3, 5))  # Saída: 8
+
+c)
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Saída: [2, 4]
+
+
+Comparando a denição/escrita de funções:
+
+def soma(a, b):
+  return a + b
+
+lambda a, b: a + b
+
+No final são a mesma coisa, mas a primeira é mais explicita e a segunda é mais "limpa"

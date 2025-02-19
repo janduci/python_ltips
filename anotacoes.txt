@@ -127,6 +127,24 @@ Quando precisar filtrar elementos de uma coleção sem criar um laço for manual
 Para tornar o código mais funcional e legível.
 Quando quiser evitar criar listas temporárias com for e if.
 
+Em Python funções também são objetos, e podem ser utilizadas como qualquer outro objeto, ou seja, uma função pode ser passada como paramêtro para outra função, exemplo:
+
+def transforma_em_maiusculo(texto):
+    return texto.upper()
+
+def transforma_em_minusculo(texto):
+    return texto.lower()
+
+def divide_por_2(numero):
+    return numero // 2
+
+# e nossa função principal
+
+def faz_algo(valor, funcao):
+    return funcao(valor)
+
+print(faz_algo("bruno", transforma_em_maiusculo))
+# BRUNO
 
 Função de primeira classe é uma função que pode ser tratada como qualquer outro valor, ou seja, pode ser:
 Atribuída a uma variável
@@ -156,3 +174,19 @@ def soma(a, b):
 lambda a, b: a + b
 
 No final são a mesma coisa, mas a primeira é mais explicita e a segunda é mais "limpa"
+
+O protocolo callable em Python define a capacidade de um objeto ser chamado como uma função, ou seja, ele pode ser invocado com (), como se fosse uma função normal. Para verificar se um objeto é callable, usamos a função embutida callable(obj), que retorna True se o objeto puder ser chamado e False caso contrário.
+
+def saudacao():
+    return "Olá, mundo!"
+
+print(callable(saudacao))  # Saída: True
+print(saudacao())  # Saída: "Olá, mundo!"
+
+
+Estratégias de DEBUG:
+
+a) utilizar o -i do ipython
+b) posicionar a função print em locais estratégicos do código para validar e/ou endenter as saídas
+c) utilizar o módulo PDB (utilizar o help para mais informações)
+

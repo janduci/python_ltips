@@ -16,7 +16,7 @@ operacoes = {
 print(operacoes[operacao](int(n1), int(n2)))
 
 """
-Comparando a denição/escrita de funções
+Comparando a escrita de funções
 
 def soma(a, b):
   return a + b

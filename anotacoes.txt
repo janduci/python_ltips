@@ -213,3 +213,49 @@ tupla
 dicionários
 lista 
 
+#### Subscrição
+
+Em Python, a "subscrição" refere-se ao uso de colchetes [] para acessar elementos 
+individuais de coleções como listas, tuplas, dicionários e strings
+
+#### Desenpacotamento de dicionários
+
+cliente = {"nome:" "maria"} 
+extra = {"pais:" "brasil"} 
+final = {**cliente, **extra}
+
+O operador ** é usado para "desempacotar" os pares chave-valor dos dicionários cliente 
+e extra e combiná-los em um novo dicionário chamado final. O resultado será:
+
+final = {"nome": "maria", "pais": "brasil"}
+
+Essa é uma forma clara e concisa de mesclar dicionários
+
+#### Troubleshooting em dicionários
+
+for chave, valor in cliente: 
+    print(chave, "->", valor) 
+    
+ValueError: too many values to unpack (expected 2)
+
+O erro ValueError: too many values to unpack (expected 2) ocorre porque você está 
+tentando iterar sobre um dicionário (cliente) como se ele retornasse pares chave-valor 
+diretamente. No entanto, a iteração padrão de um dicionário em Python só retorna as chaves.
+Para resolver isso, você deve usar o método .items() do dicionário, que retorna uma visão 
+dos pares chave-valor, permitindo que você descompacte dois valores.
+
+Fazendo do jeito certo:
+
+for chave, valor in cliente.items():
+    print(chave, "->", valor)
+
+Usando cliente.items(), a iteração do for irá descompactar corretamente cada par chave-valor 
+e o erro não ocorrerá mais.
+
+
+#### Função print com saída amigável
+
+import pprint
+# pprint = pretty print
+
+pprint.print("Eu sou bonito")

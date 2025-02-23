@@ -190,3 +190,26 @@ a) utilizar o -i do ipython
 b) posicionar a função print em locais estratégicos do código para validar e/ou endenter as saídas
 c) utilizar o módulo PDB (utilizar o help para mais informações)
 
+#### Tipos de dados
+
+Tipos de dados primitivos
+
+São os blocos de construção fundamentais dos dados em linguagens de programação, incluindo 
+Python. Eles representam os valores mais básicos e simples que não são compostos por outros 
+tipos de dados. Aqui estão os tipos de dados primitivos mais comuns:
+int
+float
+booleano
+strings
+
+Tipos de dados compostos:
+
+Também conhecidos como tipos de dados agregados, são estruturas de dados que podem conter 
+múltiplos valores agrupados. Em Python, eles permitem que você armazene coleções de itens 
+de diferentes tipos, aumentando a flexibilidade e a complexidade dos programas que você 
+pode escrever. Aqui estão alguns dos tipos de dados compostos mais comuns:
+set
+tupla 
+dicionários
+lista 
+

@@ -16,8 +16,8 @@ atividades = [("futebol", aula_futebol), ("ballet", aula_ballet)]
 
 for nome_atividade, atividade in atividades:
     print(f"Alunos da aula de {nome_atividade}:")
-    atividade_sala1 = set(atividade).intersection(sala1)
-    atividade_sala2 = set(atividade).intersection(sala2)
+    atividade_sala1 = set(atividade).intersection(set(sala1))
+    atividade_sala2 = set(atividade).intersection(set(sala2))
     print()
     print(f"Alunos da sala 1: {atividade_sala1}")
     print()

@@ -27,6 +27,38 @@ Site ótimo para formatação: https://pyformat.info/
 
 Um tipo de dado em Python é tudo que tenha um ID de memória
 
+########## Troubleshooting de métodos e atributos 
+
+Forma de diferenciar atributos de métodos (funções)
+
+1. Utilizar a função "callabe"
+
+Exemplo: 
+
+callable(objeto.atributo_ou_metodo): Verifica se o item é chamável (indicando que é um método).
+
+callabe(print)
+True
+
+callabe(sys)
+False
+
+2. Utilizar a função "help"
+
+Exemplo: 
+
+help(print)
+Help on built-in function dir in module builtins:
+
+Você pode utilizar o help para navegar na estrutura do objeto sendo consultado e entender suas funcionalidades. 
+
+Definição do help: 
+This is a wrapper around pydoc.help that provides a helpful message when 'help' is typed at the Python interactive prompt.
+ 
+Calling help() at the Python prompt starts an interactive help session.
+Calling help(thing) prints help for the python object 'thing'.
+
+
 ########## Parenteses utilizados em métodos:
 
 O método isdigit() vem da classe str (string) no Python. Toda string em Python é um objeto da classe str, e essa classe fornece vários métodos que você pode usar para manipular ou analisar o conteúdo da string.

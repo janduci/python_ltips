@@ -255,7 +255,7 @@ e o erro não ocorrerá mais.
 
 #### Função print com saída amigável
 
-import pprint
+from pprint import pprint
 # pprint = pretty print
 
 pprint.print("Eu sou bonito")

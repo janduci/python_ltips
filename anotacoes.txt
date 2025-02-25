@@ -291,3 +291,9 @@ from pprint import pprint
 # pprint = pretty print
 
 pprint.print("Eu sou bonito")
+
+#### CLI argumentos com sys.argv
+
+sys.argv é uma lista em Python que contém os argumentos de linha de comando passados para o script Python. 
+O primeiro elemento da lista sys.argv[0] é sempre o nome do script, enquanto os elementos subsequentes 
+sys.argv[1], sys.argv[2], ... são os argumentos passados para o script.

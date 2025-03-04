@@ -13,24 +13,31 @@ e tratar o erro caso ocorra (trato antes ou trato depois)
 # É mais fácil pedir perdão do que permissão
 
 try:
+    raise RuntimeError("Ocorreu um erro") # Forçando um erro
+except Exception as e: # Capturando o erro
+    print(str(e)) # Exibindo a mensagem de erro
+
+try:
     names = open("names.txt").readlines()
     1 / 1
     print(names.append) 
-except FileNotFoundError:
+except FileNotFoundError: # Tratando erro de arquivo não encontrado
     print("[Error] file not found")
     sys.exit(1)
-except ZeroDivisionError:
+except ZeroDivisionError: # Tratando erro de divisão por zero
     print("[Error] you can't divide by zero")
     sys.exit(1)
-except AttributeError:
+except AttributeError: # Tratando erro de atributo não encontrado
     print("[Error] attribute not found")
     sys.exit(1)
 else:
     print("Atributo existe")
+finally:
+    print("Execute isso sempre") # Sempre será executado, independente se houver erro ou não
 
 try:  
     print(names[2])
-except (IndexError, NameError) as e:
+except (IndexError, NameError) as e: # Tratando erro de índice não encontrado e erro de variável não definida
     print(f"[Error] {str(e)}")
     sys.exit(1)
 

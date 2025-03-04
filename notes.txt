@@ -1,6 +1,0 @@
-Tag: teste
-Texto: alex 
-Tag: teste
-Texto: alex
-Tag: a
-Texto: f

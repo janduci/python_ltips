@@ -319,3 +319,22 @@ r+ - read and write from the starts
 t - text mode 
 b - bynary mode
 
+#### Tratamento de erros
+
+https://docs.python.org/pt-br/3.13/tutorial/errors.html#exception-chaining
+
+Para ler ajuda de exceptions do Python:
+
+1. acessar python3
+2. digitar help()
+3. digitar topics
+4. digitar exceptions em caixa alta
+
+
+#### Logging
+
+No Python, o "root logger" é o logger principal que atua como a raiz da hierarquia dos loggers. Quando você 
+inicia o sistema de logging no Python, o root logger é criado automaticamente, e todos os outros loggers são 
+derivados dele. Ele é o logger padrão usado se você não criar explicitamente um logger de nível inferior.
+
+https://docs.python.org/3/library/logging.html

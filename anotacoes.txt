@@ -297,3 +297,25 @@ pprint.print("Eu sou bonito")
 sys.argv é uma lista em Python que contém os argumentos de linha de comando passados para o script Python. 
 O primeiro elemento da lista sys.argv[0] é sempre o nome do script, enquanto os elementos subsequentes 
 sys.argv[1], sys.argv[2], ... são os argumentos passados para o script.
+
+##### Trabalhando com arquivos
+
+Gerenciadores de contexto são especialmente úteis para trabalhar com arquivos em Python. Eles garantem que 
+os arquivos sejam corretamente abertos e fechados, mesmo que ocorra algum erro durante a manipulação dos dados. 
+O uso do gerenciador de contexto é feito com a instrução with. Isso é importante para manter os descritores de 
+arquivos devidamente fechados. 
+
+with open('meuarquivo.txt', 'r') as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)
+
+Modos para tratamento de arquivos
+r - read
+w - write
+x - write or fail if the line already exists
+a - append
+w+ - read and write (truncate)
+r+ - read and write from the starts
+t - text mode 
+b - bynary mode
+

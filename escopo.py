@@ -1,1 +1,3 @@
 nome = "Janduci"
+
+print(nome) 

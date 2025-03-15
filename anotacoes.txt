@@ -361,3 +361,73 @@ inicia o sistema de logging no Python, o root logger é criado automaticamente, 
 derivados dele. Ele é o logger padrão usado se você não criar explicitamente um logger de nível inferior.
 
 https://docs.python.org/3/library/logging.html
+
+#### Condições ternárias
+
+Uma condição ternária em Python é uma maneira concisa de escrever uma expressão 
+if-else em uma única linha de código. Também é conhecida como "operador condicional" 
+ou "expressão condicional"
+
+paz = True if vencer_o_thanos else False
+tipo_de_x = "Par" if x % 2 == 0 else "impar"
+print("ok" if n1 > n2 else "nok")
+
+#### Operações inline
+
+Operações inline em Python referem-se a expressões ou operações que podem ser 
+escritas e executadas em uma única linha de código. Estas operações são geralmente 
+usadas para tornar o código mais conciso e legível. Aqui estão alguns exemplos 
+comuns de operações inline em Python:
+
+1. condições ternárias
+# Sintaxe: valor_true if condicao else valor_false
+idade = 18
+status = "Maior de idade" if idade >= 18 else "Menor de idade"
+print(status)
+
+2. List comprehension
+# Sintaxe: [expressao for item in iteravel]
+quadrados = [x**2 for x in range(10)]
+print(quadrados)
+
+3. Generator Expression
+# Sintaxe: (expressao for item in iteravel)
+quadrados = (x**2 for x in range(10))
+for numero in quadrados:
+    print(numero)
+
+4. Dicionário comprehension
+# Sintaxe: {chave: valor for item in iteravel}
+numeros_pares = {x: x**2 for x in range(10) if x % 2 == 0}
+print(numeros_pares)
+
+
+#### JSON
+
+Os métodos json.dumps e json.loads fazem parte do módulo json do Python, utilizado
+para trabalhar com dados no formato JSON (JavaScript Object Notation). 
+
+json.dumps: Converte um objeto Python (como um dicionário ou lista) em uma string 
+no formato JSON. O "dumps" significa "dump string", ou seja, ele cria uma 
+representação em texto do objeto Python. Exemplo:
+
+import json
+
+dados = {"nome": "Alexsandro", "idade": 30}
+json_string = json.dumps(dados)
+print(json_string)
+# Saída: {"nome": "Alexsandro", "idade": 30}
+
+
+json.loads: Faz o oposto, convertendo uma string no formato JSON de volta para 
+um objeto Python. O "loads" significa "load string", carregando os dados JSON 
+para um formato compreensível pelo Python. Exemplo:
+
+json_string = '{"nome": "Alexsandro", "idade": 30}'
+dados = json.loads(json_string)
+print(dados)
+# Saída: {'nome': 'Alexsandro', 'idade': 30}
+
+json.dumps transforma dados do Python em formato JSON.
+json.loads converte dados do JSON de volta para o Python.
+

@@ -431,3 +431,42 @@ print(dados)
 json.dumps transforma dados do Python em formato JSON.
 json.loads converte dados do JSON de volta para o Python.
 
+#### Intervalor semi-abertos
+
+O limite superior não é incluído nas funções range() (e em algumas outras funções 
+similares) do Python porque elas seguem a convenção matemática de intervalos 
+semiabertos. Na matemática, intervalos semiabertos são escritos como [início, fim), 
+o que significa que o início é incluído, mas o fim não é. Essa abordagem tem vários 
+benefícios em termos de lógica e implementação em programação.
+
+Se você escreve range(1, 10), o intervalo terá os números de 1 a 9. O número de 
+elementos será calculado como:
+
+total = fim - início  # Aqui, 10 - 1 = 9 elementos
+
+Falando sobre listas:
+Em Python, os índices de listas começam em 0 e vão até o tamanho da lista menos 1.
+
+
+#### Comando continue
+
+O comando continue em Python é usado dentro de loops (como for ou while) para 
+interromper a iteração atual e passar para a próxima iteração do loop, ignorando 
+o restante do código que vem após o continue.
+
+Em outras palavras, ele pula diretamente para a próxima execução do loop, sem sair 
+dele. Exemplo:
+
+for numero in range(1, 201):
+    if numero % 2 != 0:
+        continue
+    if numero % 2 == 0:
+        print(numero)
+
+Se o número for diferente de zero no primeiro "if", o continue é ativado, mas se
+for zero, o próximo "if" é executado. 
+
+#### Gotinha de conhecimento
+
+Sim, toda entrada do usuário em Python obtida por meio da função input() é sempre do 
+tipo str (string), independentemente do que for digitado.

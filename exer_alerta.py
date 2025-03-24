@@ -30,21 +30,33 @@ str (string), independentemente do que for digitado.
 temperatura = float(input("Qual é a temperatura atual? "))
 umidade = float(input("Qual é o índice de umidade do ar? "))
 
-if temperatura > 45:
-    print("Alerta!!! Perigo, calor extremo") 
-    
-elif temperatura * 3 >= umidade:
-    print("Alerta!!! Perigo de calor umido ")
+try: 
+    if temperatura > 45:
+        print("Alerta!!! Perigo, calor extremo")
 
-elif temperatura > 10 < 30:
-    print("Normal")
+    elif temperatura * 3 >= umidade:
+        print("Alerta!!! Perigo de calor umido ")
+
+    elif temperatura > 10 < 30:
+        print("Normal")
 # dependendo do valor da temperatura e da umidade, vai dar match no primeiro elif
 
-elif temperatura > 0 < 10:
-    print("Frio")
+    elif temperatura > 0 < 10:
+        print("Frio")
 
-elif temperatura < 0:
-    print("Alerta!!! Frio extremo")
+    elif temperatura < 0:
+        print("Alerta!!! Frio extremo")
+
+except ValueError:
+    print("Could not convert string to float")
+
+except Exception as error:
+    print("Unknown error")
+
+finally:
+    print("End of the program")
+
+
 
 
 

@@ -498,3 +498,5 @@ print(dicionario)  # Resultado: {'a': 10, 'b': 2, 'c': 3, 'd': 4}
 já exista, retorna o valor atual da chave.
 dicionario.setdefault("e", 5)  
 print(dicionario)  # Resultado: {'a': 10, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+
+#### 

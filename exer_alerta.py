@@ -27,8 +27,11 @@ str (string), independentemente do que for digitado.
 
 # faixa de medição da umidade é de 0 a 100%
 
-temperatura = float(input("Qual é a temperatura atual? "))
-umidade = float(input("Qual é o índice de umidade do ar? "))
+temperatura = float(input("Qual é a temperatura atual? ")).strip()
+umidade = float(input("Qual é o índice de umidade do ar? ")).strip()
+
+# método split() é utilizado para remover caracteres indesejados no início e no final
+# de uma string. Por padrão, ele remove espaços em branco, mas você pode especificar.
 
 try: 
     if temperatura > 45:

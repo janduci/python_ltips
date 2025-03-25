@@ -470,3 +470,31 @@ for zero, o próximo "if" é executado.
 
 Sim, toda entrada do usuário em Python obtida por meio da função input() é sempre do 
 tipo str (string), independentemente do que for digitado.
+
+
+#### Principais métodos de dicionários
+
+.keys() Retorna uma visualização das chaves do dicionário.
+dicionario = {"a": 1, "b": 2, "c": 3}
+print(dicionario.keys())  # Resultado: dict_keys(['a', 'b', 'c'])
+
+.values() Retorna uma visualização dos valores.
+print(dicionario.values())  # Resultado: dict_values([1, 2, 3])
+
+.items() Retorna uma visualização de tuplas contendo pares (chave, valor).
+print(dicionario.items())  # Resultado: dict_items([('a', 1), ('b', 2), ('c', 3)])
+
+.get(chave, valor_padrao) Retorna o valor da chave especificada. Se a chave não existir, retorna 
+o valor_padrao (ou None se não for especificado).
+print(dicionario.get("b"))         # Resultado: 2
+print(dicionario.get("x", "N/A"))  # Resultado: N/A
+
+.update(outro_dicionario) Atualiza o dicionário com pares (chave, valor) de outro dicionário ou de 
+uma sequência de pares.
+dicionario.update({"d": 4, "a": 10})
+print(dicionario)  # Resultado: {'a': 10, 'b': 2, 'c': 3, 'd': 4}
+
+.setdefault(chave, valor_padrao) Adiciona a chave com o valor especificado se ela não existir. Caso 
+já exista, retorna o valor atual da chave.
+dicionario.setdefault("e", 5)  
+print(dicionario)  # Resultado: {'a': 10, 'b': 2, 'c': 3, 'd': 4, 'e': 5}

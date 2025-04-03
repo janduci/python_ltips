@@ -16,14 +16,14 @@ def validar_string(s):
     else:
         print("Sucesso: palavra contém apenas caracteres")
 
-palavra = input(str("Digite uma palavra: \n"))
+palavra = input(str("Digite uma palavra: \n")).strip() # strip para remover espaçoes brancos no início e no fim
 validar_string(palavra) # chama a função
 
 resultado = ''
-vogais = ["a","e","i","o","u"]
+vogais = ["a","e","i","o","u","A","E","I","O","U"]
 for letra in palavra:
     if letra in vogais:
-        resultado += letra * 2 # se a letra for uma vogais, multiplica ela por 2
+        resultado += letra * 2 # se a letra for uma vogal, multiplica ela por 2
     else:
         resultado = resultado + letra # se a letra não for uma vogal, adiciona a mesma na variável resultado
 print(resultado)
